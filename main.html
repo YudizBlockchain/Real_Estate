@@ -1,0 +1,128 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Real Estate </title>
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all"/>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Classy Booking Form  Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!--web-fonts-->
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<script src="contract.js"></script>
+<script src="bundle.js"></script>
+<script src="update.js"></script>
+
+<script src="js/jquery-1.12.0.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+
+<!--web-fonts-->
+</head>
+<body>
+	
+	
+	<!---header-->
+		<div class="header w3ls">
+			<h1>Real Estate Registery</h1>
+		</div>
+		<!---header-->
+		<!---main-->
+			<div class="main">
+				<div class="main-section agile">
+					<div class="login-form">
+						<form action="#" method="post" autocomplete="off">
+							<ul>
+								 <li class="text-info">Property Coin ID *</li>
+								 <li><input type="text" name="PropertyCoin" id="Pid" placeholder="" required  ></li>
+								 <div class="clear"></div>
+							 </ul>
+							 <ul>
+								 <li class="text-info">City *</li>
+								 <li><input type="text" name="city" id="city" placeholder="" required></li>
+								 <div class="clear"></div>
+							 </ul>
+							 <ul>
+								 <li class="text-info">State/ Territory *</li>
+								 <li><input type="text" id="state" placeholder="" required></li>
+								 <div class="clear"></div>
+							 </ul>
+							 <ul>
+								<li class="text-info">Postal Code *</li>
+								<li><input type="text" id="pcode" placeholder="" required></li>
+								<div class="clear"></div>
+							</ul>
+							<ul>
+							 <li class="text-info">Country *</li>
+							 <li><input type="text" id="country" placeholder="" required></li>
+							 <div class="clear"></div>
+						 </ul>
+						 <ul>
+							 <li class="text-info">Loan/ Property *</li>
+							 <li class="se"><select class="time-dropdown form-dropdown validate[required, limitDate]" id="min_15" name="q15_departureDatetime15[min]">
+
+								<option value="Loan">Loan</option>
+								<option value="Property">Property</option>
+								</select></li>
+							 <div class="clear"></div>
+						 </ul>
+							  <ul>
+								<li class="text-info">Purchase Date *</li>
+								<li class="dat"><input class="date" id="datepicker" type="text" value="dd-mm-yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'dd-mm-yyyy';}" required=></li>
+								<div class="clear"></div>
+							</ul>
+							<ul>
+								<li class="text-info">Disposition Date *</li>
+								<li class="dat"><input class="date" id="datepicker1" type="text" value="dd-mm-yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'dd-mm-yyyy';}" required=></li>
+								<div class="clear"></div>
+							</ul>
+							<!---start-date-piker-->
+										<link rel="stylesheet" href="css/jquery-ui.css" />
+										<script src="js/jquery-ui.js"></script>
+											<script>
+												$(function() {
+												$( "#datepicker,#datepicker1" ).datepicker();
+												});
+											</script>
+							<!---/End-date-piker-->
+								<ul>
+	 								<li class="text-info">Purchase Price/Loan Amount *</li>
+	 								<li><input type="text" id="pprice" placeholder="" required></li>
+	 								<div class="clear"></div>
+	 							</ul>
+								<ul>
+	 								<li class="text-info">Disposition Price *</li>
+	 								<li><input type="text" id="dprice" placeholder="" required></li>
+	 								<div class="clear"></div>
+	 							</ul>
+								<ul>
+									<li class="text-info">Repair Cost *</li>
+									<li><input type="text" id="rcost" placeholder="" required></li>
+									<div class="clear"></div>
+								</ul>
+								<ul>
+									<li class="text-info">Net Profit *</li>
+									<li><input type="text" id="nprofit" placeholder="" required></li>
+									<div class="clear"></div>
+								</ul>
+
+							<input type="button"  id="sub" name="Add Record" value="Add Record" onclick="Add()">
+							<input type="button"  id="pop" name="Add Record" value="Update Record" onclick="nextPage()">
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer w3agile">
+
+		</div>
+
+		<!---main-->
+</body>
+</html>
